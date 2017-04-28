@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "App to find like minded friends",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dusterdieck/friendFinder.git"
+  },
+  "keywords": [
+    "Friends",
+    "Finder"
+  ],
+  "author": "Timothy Dusterdieck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dusterdieck/friendFinder/issues"
+  },
+  "homepage": "https://github.com/dusterdieck/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  }
+}
