@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+	<meta charset='UTF-8' name="viewport" content="width=device-width, initial-scale=1">
+	<title>Friend Finder</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Latest compiled and minified JavaScript (Bootstrap)-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS (BootStrap Select)-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+	<!-- Latest compiled and minified JavaScript (BootStrap Select)-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+</head>
+
+<body>
+
+	<div class='container'>
+		<h1>Survey Questions</h1>
+		<hr>
+		<h2><strong>About You</strong></h2>
+		<div class="form-group">
+		  <label for="user"><h4>Name (Required)</h4></label>
+		  <input type="text" class="form-control" id="user" required>
+		</div>
+		<div class="form-group">
+		  <label for="userPic"><h4>Link to Photo Image (Required)</h4></label>
+		  <input type="password" class="form-control" id="userPic" required>
+		</div>
+		<hr>
+		<h2><strong>Question 1</strong></h2>
+		<h4>You think beer is good and proof that God loves us.</h4>
+		<select data-placeholder="" class="selectpicker" id="q1">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 2</strong></h2>
+		<h4>You enjoy watching sports.</h4>
+		<select data-placeholder="" class="selectpicker" id="q2">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 3</strong></h2>
+		<h4>You look forward to going to the theatre.</h4>
+		<select data-placeholder="" class="selectpicker" id="q3">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 4</strong></h2>
+		<h4>You enjoy going to live music shows.</h4>
+		<select data-placeholder="" class="selectpicker" id="q4">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 5</strong></h2>
+		<h4>You enjoy hiking.</h4>
+		<select data-placeholder="" class="selectpicker" id="q5">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 6</strong></h2>
+		<h4>You like video games.</h4>
+		<select data-placeholder="" class="selectpicker" id="q6">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 7</strong></h2>
+		<h4>You like bar games such as darts, cornhole, or shuffleboard.</h4>
+		<select data-placeholder="" class="selectpicker" id="q7">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 8</strong></h2>
+		<h4>You think surveys are inherently dumb.</h4>
+		<select data-placeholder="" class="selectpicker" id="q8">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 9</strong></h2>
+		<h4>You engage in social media.</h4>
+		<select data-placeholder="" class="selectpicker" id="q9">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+      	<h2><strong>Question 10</strong></h2>
+		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+		<select data-placeholder="" class="selectpicker" id="q10">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+		<br>
+		<br>
+      	<button class='btn btn-primary btn-lg btn-block' type='submit' id='submit'><span class='glyphicon glyphicon-search' aria-hidden='true'></span> Find Your Match!</button>
+	
+	</div>
+	<hr>
+	<footer class='footer'>
+		<div class='container'>
+			<a href='/api/friends'>API Friends List</a> | <a href='http://www.github.com/dusterdieck/friendFinder'>GitHub Repo</a>
+		</div>
+	</footer>
+
+	<script type='text/javascript'>
+
+	</script>
+</body>
