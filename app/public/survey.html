@@ -32,7 +32,7 @@
 		</div>
 		<div class="form-group">
 		  <label for="userPic"><h4>Link to Photo Image (Required)</h4></label>
-		  <input type="password" class="form-control" id="userPic" required>
+		  <input type="input" class="form-control" id="userPic" required>
 		</div>
 		<hr>
 		<h2><strong>Question 1</strong></h2>
@@ -158,5 +158,20 @@
 
 	<script type='text/javascript'>
 
+		$('#submit').on('click', function(){
+			event.preventDefault();
+			var scores = [];
+			for(var i = 1; i <= 10; i++){
+				scores.push( $('#q' + i).val() );
+			}
+			//console.log(scores);
+			var currentURL = window.location.origin;
+			var dataObj = {name: $('#user').val().trim(),
+						   photo: $('#userPic').val().trim(),
+						   scores: scores}
+			$.post(currentURL + '/api/friends',dataObj, function(data){
+				console.log(data);
+			})
+		});
 	</script>
 </body>
