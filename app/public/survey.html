@@ -148,6 +148,25 @@
 		<br>
       	<button class='btn btn-primary btn-lg btn-block' type='submit' id='submit'><span class='glyphicon glyphicon-search' aria-hidden='true'></span> Find Your Match!</button>
 	
+	<div class="modal fade" tabindex="-1" role="dialog" id='modal'>
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Best Match</h4>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id='bestName'> </h2>
+	        <img src='' id='bestPic'>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
 	</div>
 	<hr>
 	<footer class='footer'>
@@ -157,7 +176,7 @@
 	</footer>
 
 	<script type='text/javascript'>
-
+ 		   
 		$('#submit').on('click', function(){
 			event.preventDefault();
 			var scores = [];
@@ -171,7 +190,10 @@
 						   scores: scores}
 			$.post(currentURL + '/api/friends',dataObj, function(data){
 				console.log(data);
-			})
+				$('#bestName').text( data.name);
+				$('#bestPic').attr('src', data.photo);
+				$('#modal').modal('toggle');
+			});
 		});
 	</script>
 </body>

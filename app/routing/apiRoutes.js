@@ -32,7 +32,7 @@ module.exports = function(app) {
         //loops through the scores array of both the posted user and the current user from the stored data
         for(let j = 0; j < 10; j++){
            //sums the absolute value of the differences of each score
-           currScore += Math.abs( user.scores[j].parseInt() - currentCompare[j].parseInt() );
+           currScore += Math.abs( parseInt(user.scores[j]) - parseInt(currentCompare[j]) );
         }
         //after loop is done, if the current score is less than the minimum score, sets that index to the most compatible
         if (currScore < minScore) {
@@ -44,7 +44,8 @@ module.exports = function(app) {
       //push new user to our friend data. important to do this after the compatibility check, otherwise it would always return the user as most compatible with themselves.
       friendData.push(user);
       //after it's checked all of the users, returns the full object for the most compatible user in the data
-      return friendData[ mostCompatible ];
+      console.log('Most compatible: ', friendData[ mostCompatible ].name)
+      res.json(friendData[ mostCompatible ]);
 
 
   });
